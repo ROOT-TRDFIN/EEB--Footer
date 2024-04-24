@@ -14,7 +14,7 @@ body {
 .gear1 {
   position: absolute;
   left: 9%;
-  top: 60px;
+  top: 55px;
 }
 
 .gear2 {
@@ -54,7 +54,27 @@ body {
   height: 80px;
   margin-bottom: 60px;
 }
+.footer-02 .footer-logo .bulb img{
+  position: absolute;
+  right: 5px;
+  width: 150px;
+  height: 130px;
+  animation: neon3 1.5s ease-in-out infinite alternate;
+  border-radius: 100%;
+}
 
+@keyframes neon3 {
+  from {
+      background-color: transparent;
+    box-shadow: 0 0 10px #fff inset, 0 0 20px #fff inset, 0 0 30px #fff, 0 0 40px #ffdd1b inset,
+      0 0 70px #fffef9 inset, 0 0 80px #ffdd1b inset, 0 0 100px #ffdd1b inset, 0 0 150px #ffdd1b inset;
+  }
+  to {
+    background-color:transparent;
+    box-shadow:  0 0 5px #fff , 0 0 10px #fff , 0 0 15px #fff inset, 0 0 20px #ffdd1b inset,
+      0 0 35px #fffdf3, 0 0 40px #ffdd1b , 0 0 50px #dace8b inset, 0 0 75px #ffdd1b ;
+  }
+}
 .footer-02 .container-fluid {
   border-top: 1px solid black;
 }
@@ -76,6 +96,7 @@ body {
   outline: none;
   border: 2px solid #000000;
   border-radius: 40px;
+  width: 350px;
 }
 
 .footer-02 .subscribe-1 .subscribe-5 .email-button {
@@ -84,18 +105,34 @@ body {
   border: none;
   color: white;
   border-radius: 50px;
+  border: 0.5px solid black;
   right: 10px;
   top: 7px;
   position: absolute;
   padding: 15px 20px;
 }
 
-.row-flex {
+.row-flex{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.row-flex .content h2{
+  color: #8fbdee;
+}
+.row-flex .quotes{
+  color: rgba(255, 255, 103, 0.826);
+  font-size: 18px;
+}
+.row-flex .content .para {
+  display:flex;
+  flex-wrap: wrap;
+  width: 300px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .row-flex p{
   color: rgb(235, 230, 230);
@@ -103,6 +140,53 @@ body {
 .row-flex a{
   text-decoration: none;
   color: black;
+}
+/*Google map*/
+.google-map{
+  margin: 20px 0px;
+}
+
+/* informaion content*/
+.information h2 {
+  text-align: center;
+  position: relative;
+}
+.information h2::before{
+  content:"";
+  width: 75px;
+  height: 5px;
+  background-color:#961709;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -10px;
+}
+
+.info ul {
+  display: inline-flex;
+  list-style: none;
+}
+
+.info .navbar-nav {
+  margin-left: 80px;
+}
+
+.info li {
+  padding-left: 20px;
+}
+
+.info a {
+  text-decoration: none;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: none;
+
+}
+
+/* news letter*/
+.information .news-letter input {
+  margin-left: 60px;
+  width: 300px;
 }
 .dk-footer-form {
   position: relative;
@@ -149,51 +233,6 @@ body {
 .dk-footer-form button:hover {
   cursor: pointer;
 }
-
-/* informaion content*/
-.information h2 {
-  text-align: center;
-  position: relative;
-}
-.information h2::before{
-  content:"";
-  width: 75px;
-  height: 5px;
-  background-color:#7a1b10;
-  border-radius: 10px;
-  position: absolute;
-  bottom: -10px;
-
-
-}
-
-.info ul {
-  display: inline-flex;
-  list-style: none;
-}
-
-.info .navbar-nav {
-  margin-left: 15px;
-}
-
-.info li {
-  padding-left: 20px;
-}
-
-.info a {
-  text-decoration: none;
-  color: white;
-  font-family: "Lato", sans-serif;
-  font-weight: 600;
-  font-style: none;
-
-}
-
-/* news letter*/
-.information .news-letter input {
-  margin-left: 60px;
-}
-
 /* social icons*/
 .social {
   border-left: 1px solid rgb(55, 36, 36);
@@ -276,8 +315,9 @@ body {
   color: rgb(239, 234, 234);
   font-size: 18px;
   font-family: "Lato", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-style: italic;
+
 }
 
 .contact-us span {
@@ -296,31 +336,123 @@ body {
 }
 
 /* Media Queries */
-@media only screen and (max-width: 768px) {
-  .row-flex {
-      margin-right: 5%;
-      margin-left: 5%;
-  }
-}
-@media only screen and (max-width: 430px){
+@media(min-width: 700px) and (max-width:1024px){
   .partner-wrap .contact {
     display: flex;
-    flex-direction: column !important;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content:space-around;
     margin-right: 0%;
     margin-left: 0%;
   }
   .contact-us a {
     text-decoration: none;
-    margin-left: 15px;
+    margin-left: 10px;
     color: rgb(239, 234, 234);
-    font-size: 16px;
-    font-family: "Lato", sans-serif;
-    font-weight: 500;
+    font-size: 18px;
+    font-style: italic;
+    display:inline-block;
+    flex-direction: row;
+  }
+  .information .news-letter {
+    margin-left: -96px;
+  }
+  .information h2 {
+    text-align:left;
+  }
+  .information .h2{
+    margin-left: 90px;
+  }
+  .info .navbar-nav {
+    margin-left: -80px;
+  }
+  
+  .info li {
+    padding-left: 20px;
+  }
+  .social {
+    border-left:none;
+    margin-left: -120px;
+  }
+  .fa-gear {
+    position: absolute;
+    font-size: 65px;
+    color: #1354AE;
+  }
+  .gear1 {
+    position: absolute;
+    left: 10%;
+    top: 45px;
+  }
+
+}
+@media only screen and (max-width: 430px){
+  .partner-wrap .contact {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-evenly ;
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+  .contact-us a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: rgb(239, 234, 234);
+    font-size: 18px;
     font-style: italic;
     display: flex;
     flex-direction: row;
+  }
+  .information .news-letter input {
+    margin-left: 0px;
+    width: 180px;
+  }
+  .info ul {
+    margin-left: -25px !important;
+  }
+.footer-heading {
+  text-align: center;
+  margin-left: 0px;
+}
+  .social {
+    border-left: none;
+  }
+  .footer-social-link ul {
+    display: flex;
     flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: -35px;
+  }
+  .fa-gear {
+    position: absolute;
+    font-size: 25px;
+    color: #1354AE;
+  }
+  .footer-02 .footer-logo img {
+    width: 150px;
+    height: 50px;
+    margin-bottom: 30px;
+  }
+  .footer-02 .footer-logo .bulb img{
+    position: absolute;
+    right: 0;
+    width: 70px;
+    height: 70px;
+  }
+  .gear1 {
+    position: absolute;
+    left: 9%;
+    top: 30px;
+  }
+  .gear2 {
+    position: absolute;
+    left: 7%;
+    top: 10px;
+    transform: rotate(40deg);
+  }
+  .footer-02 .subscribe-1 .subscribe-5 .email-text {
+    width: 150px !important;
   }
   
 }
