@@ -302,3 +302,25 @@ body {
       margin-left: 5%;
   }
 }
+@media only screen and (max-width: 430px){
+  .partner-wrap .contact {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-evenly;
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+  .contact-us a {
+    text-decoration: none;
+    margin-left: 15px;
+    color: rgb(239, 234, 234);
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+}
