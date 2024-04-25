@@ -133,6 +133,20 @@ body {
 /*Google map*/
 .google-map{
   margin: 20px 0px;
+
+}
+.google-map .icon {
+  text-align: center;
+  font-size: 30px;
+}
+.google-map .icon i{
+  color:#4292e7;
+}
+.google-map .parag{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: large;
 }
 
 /* informaion content*/
@@ -318,7 +332,26 @@ body {
 }
 
 /* Media Queries */
-@media(min-width: 700px) and (max-width:1024px){
+
+
+@media(min-width:800px) and (max-width:1024px){
+  .row-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-right:2%;
+    margin-left: 2%;
+  }
+  .information .news-letter input {
+    margin-left:50px;
+    width: 180px;
+  }
+  .footer-02 .social .border-left {
+    padding-left:40px !important;
+  }
+}
+
+@media(min-width: 768px){
   .partner-wrap .contact {
     display: flex;
     flex-wrap: wrap;
@@ -335,11 +368,15 @@ body {
     display:inline-block;
     flex-direction: row;
   }
+  .information {
+    margin-top: 30px;
+  }
   .information .news-letter {
     margin-left: -96px;
   }
   .information h2 {
     text-align:left;
+    margin-top: -0px;
   }
   .information .h2{
     margin-left: 90px;
@@ -368,12 +405,15 @@ body {
 
 }
 @media only screen and (max-width: 430px){
+  .partner-wrap{
+    margin-top: -20px;
+  }
   .partner-wrap .contact {
     display: flex;
     flex-direction: column !important;
-    justify-content: space-evenly ;
     margin-right: 0%;
     margin-left: 0%;
+    margin-bottom: 10px;
   }
   .contact-us a {
     text-decoration: none;
@@ -383,6 +423,10 @@ body {
     font-style: italic;
     display: flex;
     flex-direction: row;
+    margin-top: 5px;
+  }
+  .information {
+    margin-top: -30px;
   }
   .information .news-letter input {
     margin-left: 0px;
@@ -397,6 +441,7 @@ body {
 }
   .social {
     border-left: none;
+    margin-bottom:-20px !important;
   }
   .footer-social-link ul {
     display: flex;
@@ -418,7 +463,7 @@ body {
   }
   .footer-02 .footer-logo .bulb img{
     position: absolute;
-    right: 0;
+    right: 0 !important;
     width: 70px;
     height: 70px;
   }
