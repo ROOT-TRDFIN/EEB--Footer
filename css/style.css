@@ -5,16 +5,15 @@ body {
 }
 
 .footer-02 {
-  background:  #1354AE;
+  background:white;
   height: min-content;
   position: relative;
   width: 100%;
   top: 300px;
 }
-
 .gear1 {
-  position: absolute;
-  left: 8.7%;
+  position:absolute;
+  left:8.8% !important;
   top: 55px;
 }
 
@@ -97,7 +96,7 @@ body {
   border-radius: 50px;
   border: 0.5px solid black;
   right: 10px;
-  top: 7px;
+  top: 6px;
   position: absolute;
   padding: 15px 20px;
 }
@@ -110,10 +109,10 @@ body {
   margin-left: 6%;
 }
 .row-flex .content h2{
-  color: #8fbdee;
+  color:#1354AE;
 }
 .row-flex .quotes{
-  color: rgba(255, 255, 103, 0.826);
+  color: rgb(0, 157, 255);
   font-size: 18px;
 }
 .row-flex .content .para {
@@ -125,7 +124,7 @@ body {
   font-style: normal;
 }
 .row-flex p{
-  color: rgb(235, 230, 230);
+  color: rgb(0, 0, 0);
 }
 .row-flex a{
   text-decoration: none;
@@ -139,15 +138,18 @@ body {
 .google-map .icon {
   text-align: center;
   font-size: 30px;
+  display: none;
 }
 .google-map .icon i{
   color:#4292e7;
+  display: none;
 }
 .google-map .parag{
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: large;
+  display: none;
 }
 
 /* informaion content*/
@@ -171,7 +173,7 @@ body {
 }
 
 .info .navbar-nav {
-  margin-left: 80px;
+  margin-left: -60px !important;
 }
 
 .info li {
@@ -180,7 +182,7 @@ body {
 
 .info a {
   text-decoration: none;
-  color: white;
+  color:#1877f2 ;
   font-family: "Lato", sans-serif;
   font-weight: 600;
   font-style: none;
@@ -191,16 +193,19 @@ body {
 }
 
 /* news letter*/
+.news-letter{
+  margin-top: 30px;
+}
 .information .news-letter input {
   margin-left: 60px;
-  width: 300px;
+  width: 200px;
 }
 .dk-footer-form {
   position: relative;
 }
 
 .dk-footer-form input[type=email] {
-  padding: 14px 28px;
+  padding: 14px 20px;
   border-radius: 50px;
   background: #2e2e2e;
   color: white;
@@ -241,9 +246,6 @@ body {
   cursor: pointer;
 }
 /* social icons*/
-.social {
-  border-left: 1px solid rgb(55, 36, 36);
-}
 
 .footer-heading {
   text-align: left;
@@ -297,29 +299,33 @@ body {
 }
 
 /* contact section */
+.footer-02 .partner-wrap{
+  border-top: 1px solid black;
+  margin-top: 10px;
+}
 .partner-wrap .contact {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin-right: 15%;
-  margin-left: 15%;
+  margin-right: 35%;
+  margin-left: 35%;
 }
-
 .contact-us a {
   text-decoration: none;
   margin-left: 30px;
-  color: rgb(239, 234, 234);
-  font-size: 18px;
+  color:#4292e7 !important;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: italic;
-
 }
-
 .contact-us span {
   color: #000;
   font-size: 20px;
+}
+.contact-us span::after{
+  content: "_";
+  color: white;
 }
 
 /* copy right*/
@@ -333,9 +339,14 @@ body {
 }
 
 /* Media Queries */
-
+@media(min-width:1025px) and (max-width:1440px){
+  .social {
+     padding:40px!important;
+  }
+}
 
 @media(min-width:800px) and (max-width:1024px){
+  
   .row-flex{
     display: flex;
     flex-wrap: wrap;
@@ -344,15 +355,24 @@ body {
     margin-left: 2%;
   }
   .information .news-letter input {
-    margin-left:50px;
+    margin-left:70px;
     width: 180px;
   }
-  .footer-02 .social .border-left {
-    padding-left:40px !important;
+  .social {
+    border-left:none !important;
+    margin-left: 10px !important;
+  }
+  .gear1 {
+    position:absolute;
+    left:9.5% !important;
+    top: 55px;
+  }
+  .google-map iframe{
+    margin-left:-20px;
   }
 }
 
-@media(min-width: 768px){
+@media(min-width:768px){
   .partner-wrap .contact {
     display: flex;
     flex-wrap: wrap;
@@ -390,7 +410,7 @@ body {
     padding-left: 20px;
   }
   .social {
-    border-left:none;
+    border-left:none !important;
     margin-left: -120px;
   }
   .fa-gear {
@@ -399,8 +419,7 @@ body {
     color: #1354AE;
   }
   .gear1 {
-    position: absolute;
-    left: 10%;
+    left: 12%;
     top: 45px;
   }
 
@@ -433,15 +452,15 @@ body {
     margin-left: 0px;
     width: 180px;
   }
-  .info ul {
-    margin-left: -25px !important;
+  .info .navbar-nav{
+    margin-left: -30px !important;
   }
 .footer-heading {
   text-align: center;
   margin-left: 0px;
 }
   .social {
-    border-left: none;
+    border-left: none !important;
     margin-bottom:-20px !important;
   }
   .footer-social-link ul {
@@ -483,4 +502,19 @@ body {
     width: 150px !important;
   }
   
+  .google-map .icon {
+    display: block;
+  }
+  .google-map .icon i{
+    display: block;
+  }
+  .google-map .parag{
+   display: block;
+  }
+  .google-map iframe{
+    display: none;
+  }
+  .partner-wrap .contact span {
+    font-size: 18px;
+  }
 }
