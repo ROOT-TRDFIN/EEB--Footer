@@ -405,6 +405,12 @@ body {
 
 }
 @media only screen and (max-width: 430px){
+  .row-flex .content {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+  }
   .partner-wrap{
     margin-top: -20px;
   }
