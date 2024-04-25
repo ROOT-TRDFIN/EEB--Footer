@@ -242,6 +242,7 @@ body {
 /* social icons*/
 .social {
   border-left: 1px solid rgb(55, 36, 36);
+  margin-left:50px ;
 }
 
 .footer-heading {
@@ -469,7 +470,7 @@ body {
   }
   .footer-02 .footer-logo .bulb img{
     position: absolute;
-    right: 0 !important;
+    right: -6px !important;
     width: 70px;
     height: 70px;
   }
