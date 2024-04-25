@@ -464,6 +464,7 @@ body {
   }
   .footer-02 .footer-logo .bulb img{
     position: absolute;
+    right: 0px;
     width: 70px;
     height: 70px;
   }
