@@ -2,8 +2,11 @@ body {
   border: 0;
   margin: 0;
   box-sizing: border-box;
+  position: relative;
+  
 }
 
+/*  footer*/
 .footer-02 {
   background:white;
   height: min-content;
@@ -65,7 +68,7 @@ body {
 }
 
 .footer-02 .container-fluid {
-  border-top: 1px solid black;
+  border-top: 1.5px solid #1354AE;
 }
 
 .footer-02 .subscribe-1 {
@@ -81,26 +84,34 @@ body {
 }
 
 .footer-02 .subscribe-1 .subscribe-5 .email-text {
-  padding: 20px 80px 20px 50px;
+  padding: 18px 80px 15px 50px;
   outline: none;
   border: 2px solid #000000;
   border-radius: 40px;
   width: 350px;
+  font-size: larger;
 }
 
 .footer-02 .subscribe-1 .subscribe-5 .email-button {
-  background-color: #1877f2;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 36%, rgba(70,202,252,1) 100%);
   outline: none;
   border: none;
   color: white;
   border-radius: 50px;
   border: 0.5px solid black;
-  right: 10px;
-  top: 6px;
+  right: 5px;
+  top: 4.6px;
   position: absolute;
-  padding: 15px 20px;
+  padding: 15px 35px;
+  font-size: 15px;
 }
+.footer-02 .subscribe-1 .subscribe-5 .email-button:hover{
+  background:#007bff;
+  color: #000;
+  padding: -10px;
 
+}
 .row-flex{
   display: flex;
   flex-wrap: wrap;
@@ -189,7 +200,7 @@ body {
   transition: 0.8s;
 }
 .info a:hover{
-  color: #79aef4;
+  color: #183e6f;
 }
 
 /* news letter*/
@@ -302,6 +313,7 @@ body {
 .footer-02 .partner-wrap{
   border-top: 1px solid black;
   margin-top: 10px;
+  background-color: #1354AE;
 }
 .partner-wrap .contact {
   display: flex;
@@ -314,18 +326,21 @@ body {
 .contact-us a {
   text-decoration: none;
   margin-left: 30px;
-  color:#4292e7 !important;
+  color:#a2cfff;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
+}
+.contact-us a:hover{
+  color: #1877f2;
 }
 .contact-us span {
   color: #000;
-  font-size: 20px;
+  font-size: 18px;
 }
 .contact-us span::after{
   content: "_";
-  color: white;
+  color:#1354AE;
 }
 
 /* copy right*/
@@ -341,7 +356,7 @@ body {
 /* Media Queries */
 @media(min-width:1025px) and (max-width:1440px){
   .social {
-     padding:40px!important;
+     padding: 10px 20px 0px 20px!important;
   }
 }
 
@@ -372,13 +387,14 @@ body {
   }
 }
 
-@media(min-width:768px){
+@media (min-width:768px){
   .partner-wrap .contact {
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
     margin-right: 0%;
     margin-left: 0%;
+    padding-bottom: 5px;
   }
   .contact-us a {
     text-decoration: none;
@@ -425,6 +441,10 @@ body {
 
 }
 @media only screen and (max-width: 430px){
+  .footer-02 .row-flex .content{
+  margin-left: 20px;
+
+  }
   .partner-wrap{
     margin-top: -20px;
   }
@@ -433,7 +453,7 @@ body {
     flex-direction: column !important;
     margin-right: 0%;
     margin-left: 0%;
-    margin-bottom: 10px;
+    padding-bottom:10px;
   }
   .contact-us a {
     text-decoration: none;
@@ -483,7 +503,7 @@ body {
   }
   .footer-02 .footer-logo .bulb img{
     position: absolute;
-    right: 0px;
+    right: 0%;
     width: 70px;
     height: 70px;
   }
@@ -500,8 +520,15 @@ body {
   }
   .footer-02 .subscribe-1 .subscribe-5 .email-text {
     width: 150px !important;
+    font-size: 20px;
+    font-size: 15px;
   }
-  
+  .footer-02 .subscribe-1 .subscribe-5 .email-button {
+     top: 5px;
+     right:5px;
+     padding: 12px 20px;
+
+  }
   .google-map .icon {
     display: block;
   }
