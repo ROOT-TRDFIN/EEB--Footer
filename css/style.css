@@ -561,7 +561,8 @@ body {
     font-size: 18px;
   }
   .contact-us a{
-    padding: 0px 10px;
+    overflow-x: hidden !important;
+    padding: 0px 0px;
     float: center;
     margin: 0;
   }
@@ -592,7 +593,7 @@ body {
     font-family: "Lato", sans-serif;
     font-weight: 600;
     font-style: normal;
-    padding: 5px 0px;
+    padding: 0px 0px;
     margin: 0;
   }
  
