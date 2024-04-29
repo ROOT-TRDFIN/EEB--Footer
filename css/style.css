@@ -563,6 +563,7 @@ body {
   .contact-us a{
     padding: 0px 10px;
     float: center;
+    margin: 0;
   }
 }
 @media (min-width:325px) and (max-width:375px){
@@ -592,6 +593,7 @@ body {
     font-weight: 600;
     font-style: normal;
     padding: 5px 0px;
+    margin: 0;
   }
  
 }
@@ -633,5 +635,6 @@ body {
     font-weight: 600;
     font-style: normal;
     padding: 5px 0px;
+    margin: 0;
   }
 }
