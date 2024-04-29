@@ -401,7 +401,7 @@ body {
   .contact-us a {
     text-decoration: none;
     color: rgb(239, 234, 234);
-    font-size: 18px;
+    font-size: 16px;
     display:inline-block;
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -456,27 +456,30 @@ body {
 }
 
 @media only screen and (max-width: 430px){
+  .row-flex .content{
+    display: none;
+  }
   .partner-wrap{
-    margin-top: -20px;
+    margin-top: -10px;
   }
   .partner-wrap .contact {
     display: flex;
-    flex-direction: column !important;
+    flex-wrap: wrap;
+    justify-content:space-around;
     margin-right: 0%;
     margin-left: 0%;
-    padding-bottom:10px;
+    padding-bottom: 5px;
+    margin-top: -10px;
   }
   .contact-us a {
     text-decoration: none;
-    margin-left: 10px;
     color: rgb(239, 234, 234);
-    font-size: 18px;
+    font-size: 11.9px;
+    display:inline-block;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
-    display: flex;
-    flex-direction: row;
-    margin-top: 5px;
+    padding: 5px 0px;
   }
   .partner-wrap .contact-ul li{
     display: none;
@@ -562,10 +565,10 @@ body {
     float: center;
   }
 }
-@media (min-width:200px) and (max-width:325px){
+@media (min-width:325px) and (max-width:375px){
   .footer-02 .footer-logo .bulb img{
     position: absolute;
-    left: 260px;
+    left: 310px;
     width: 60px;
     height: 60px;
     margin: 0;
@@ -579,14 +582,55 @@ body {
      top: 4.2px;
      right:5px;
      padding: 12px 20px;
-
+  }
+  .contact-us a {
+    text-decoration: none;
+    color: rgb(239, 234, 234);
+    font-size: 11px;
+    display:inline-block;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    padding: 5px 0px;
+  }
+}
+@media (min-width:200px) and (max-width:325px){
+  .footer-02 .footer-logo .bulb img{
+    position: absolute;
+    left: 270px;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+  }
+  .footer-02 .subscribe-1 .subscribe-5 .email-text {
+    width: 120px !important;
+    font-size: 20px;
+    font-size: 12px;
+  }
+  .footer-02 .subscribe-1 .subscribe-5 .email-button {
+     top: 4.2px;
+     right:5px;
+     padding: 12px 20px;
   }
   .footer-social-link ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px;
     justify-content: center;
     align-items: center;
     margin-left: -35px;
+  }
+  .partner-wrap{
+    margin-top: -10px;
+  }
+  .contact-us a {
+    text-decoration: none;
+    color: rgb(239, 234, 234);
+    font-size: 11px;
+    display:inline-block;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    padding: 5px 0px;
   }
 }
