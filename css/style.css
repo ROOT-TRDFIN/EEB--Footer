@@ -561,7 +561,7 @@ body {
     font-size: 18px;
   }
   .contact-us a{
-    padding: 0px 20px;
+    padding: 0px 10px;
     float: center;
   }
 }
@@ -584,15 +584,16 @@ body {
      padding: 12px 20px;
   }
   .contact-us a {
-    text-decoration: none;
+    text-decoration: dashed;
     color: rgb(239, 234, 234);
     font-size: 11px;
-    display:inline-block;
+    display:inline-block !important;
     font-family: "Lato", sans-serif;
     font-weight: 600;
     font-style: normal;
     padding: 5px 0px;
   }
+ 
 }
 @media (min-width:200px) and (max-width:325px){
   .footer-02 .footer-logo .bulb img{
