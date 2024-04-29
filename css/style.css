@@ -13,6 +13,7 @@ body {
   position: relative;
   width: 100%;
   top: 300px;
+  overflow-x: hidden;
 }
 .gear1 {
   position:absolute;
